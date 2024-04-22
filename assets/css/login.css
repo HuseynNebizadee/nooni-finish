@@ -462,3 +462,9 @@ body .dark #footer-loqo-dark{
 body .light #footer-loqo-dark{
   object-fit:contain;
 }
+body .dark #search-dark{
+  color: #fff;
+}
+body .light #search-dark{
+  color: black;
+}

@@ -164,7 +164,7 @@ header .container{
 }
 @media screen and (max-width:650px) {
 #shop-card{
-  width: 100%;
+  width: 90%;
 }
 }
 .img{
@@ -236,7 +236,7 @@ footer .foot .icon .icon-card i{
 .card {
     --accent-color: #ffd426;
     position: relative;
-    width: 240px;
+    width: 80%;
     background: white;
     border-radius: 1rem;
     padding: 0.3rem;
@@ -626,4 +626,40 @@ body .dark #lang-btn{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body .dark #search-dark{
+  color: #fff;
+}
+body .light #search-dark{
+  color: black;
+}
+#searchInput:focus{
+  box-shadow: none;
+  border-color: none;
+  outline: none;
+}
+#searchInput{
+  height: 35px;
+  border-radius: 8px;
+}
+
+#searchInput::placeholder {
+  padding-left: 20px;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); 
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); 
+  }
+}
+
+
+#searchInput {
+  animation: shadow 2s infinite; 
 }

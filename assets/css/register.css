@@ -283,3 +283,9 @@ footer .foot .icon .icon-card i{
   body .light #footer-loqo-dark{
     object-fit:contain;
   }
+  body .dark #search-dark{
+    color: #fff;
+  }
+  body .light #search-dark{
+    color: black;
+  }

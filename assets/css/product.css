@@ -166,3 +166,9 @@ body .dark #shopimg{
   body .light #footer-loqo-dark{
     object-fit:contain;
   }
+  body .dark #search-dark{
+    color: #fff;
+  }
+  body .light #search-dark{
+    color: black;
+  }

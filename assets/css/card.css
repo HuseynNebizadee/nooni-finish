@@ -1,7 +1,7 @@
 .card {
     --accent-color: #ffd426;
     position: relative;
-    width: 240px;
+    /* width: 240px; */
     background: white;
     border-radius: 1rem;
     padding: 0.3rem;
@@ -410,4 +410,13 @@ body .dark #lang-btn{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body .dark #search-dark{
+  color: #fff;
+}
+body .light #search-dark{
+  color: black;
+}
+#shop-card{
+  width: 80%;
 }

@@ -1,3 +1,10 @@
+document.querySelector("#aboutcontact").onclick=()=>{
+  window.location.assign("../pages/contact.html")
+  // console.log("huseyn");
+}
+
+
+
 let Swich = true;
 const Modebtn = document.querySelector("#modeBtn")
 const item = document.querySelector(".light")
@@ -64,7 +71,7 @@ function topFunction() {
 // ===========================================================================================
 
       const langData = {
-        en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','Login', 'Register','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 'Home / About us', 'About Noon’i', 
+        en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 'Home / About us', 'About Noon’i', 
         'Noon’i was established in 1990, consectetueleifend commodo at, consectetur eu justo.' ,
         'HOW WE WORKS', 'Production Design',
           'Integer dignissim sagittis quam. Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi.',
@@ -82,7 +89,7 @@ function topFunction() {
           ],
           
 
-        az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Daxil ol", "Qeydiyyat","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə", "Ana Səhifə / Haqqımızda", "Noon'i haqqında",
+        az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə", "Ana Səhifə / Haqqımızda", "Noon'i haqqında",
         "Noon’i 1990-cı ildə yaradılmışdır, consectetur eleifend commodo at, consectetur eu justo.", 
         "Biz necə işləyək", "Məhsulların dizaynı", "Məhsulların dizaynı paşəkar dizaynerler tərəfindən aparılır",
             "İstehsalat", "Məhsulların istehsalatı paşəkar işçilər tərəfindən aparılır",
@@ -140,4 +147,3 @@ function topFunction() {
       }
       langBtn[0].innerHTML = "EN";
         }
-

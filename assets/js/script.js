@@ -34,14 +34,14 @@ head.innerHTML = `
 
 <div class="container">
 <div class="left">
-<p style="font-size:0.8rem;margin-top: 15px" id="endir" class="lang">UP TO 40% OFF BEST-SELLING . SHOP NOW</p>
+<p style="font-size:0.8rem;margin-top: 18px" id="endir" class="lang">UP TO 40% OFF BEST-SELLING . SHOP NOW</p>
 </div>
 <div id="log-head-btn" class="right">
-${localStorage.getItem("login")== "true" ? `<a class="btn btn-success me-3"
- href="#">${localStorage.getItem("fullname")}</a>
-<a class="btn btn-danger" id="logout" >Logout</a>` : `<a style="color:#fff;text-decoration:none" class="btn btn-link
- me-4 lang" href="login.html">Login</a>
-<a style="color:#fff;text-decoration:none" class="btn btn-link lang animate__animated animate__infinite animate__fast animate__rubberBand"
+${localStorage.getItem("login")== "true" ? ` <a style="text-decoration:none;color:#fff" class="btn btn-link me-3"
+ href="#">Hello, ${localStorage.getItem("fullname")}</a>
+<a class="btn btn-danger" id="logout" ><i class="fas fa-right-from-bracket"></i> Logout</a>` : `<a style="color:#fff;text-decoration:none" class="btn btn-link
+ me-4" href="login.html">Login</a>
+<a style="color:#fff;text-decoration :none" class="btn btn-link animate__animated animate__infinite animate__fast animate__rubberBand"
  href="register.html">Register</a>`}
 </div>
 </div>
@@ -53,10 +53,10 @@ headerr.innerHTML = `
 <div class="container">
 <div class="acer">
 <input type="checkbox" id="menu" hidden />
-<label for="menu"><i class="fa-solid fa-bars"></i></label>
-<a href="../pages/blog.html"><i style="color: black;" class="fa-solid fa-search"></i></a> 
+<label for="menu"><i style="cursor: pointer" class="fa-solid fa-bars"></i></label>
+<a href="../pages/blog.html"><i id="search-dark" class="fa-solid fa-search"></i></a> 
 <nav>
-<label for="menu"><i class="fa-solid fa-xmark"></i></label>
+<label for="menu"><i style="cursor:pointer" class="fa-solid fa-xmark"></i></label>
 <ul>
 <li  style="margin-top:100px"><a class="lang" href="../../index.html">HOME</a></li>
 <li><a class="lang" href="shop.html">SHOP</a></li>
@@ -69,7 +69,7 @@ headerr.innerHTML = `
 </nav>
 </div>
 
-<div class="img"> <img  id="shopimg" height="30px"
+<div class="img"> <img style="cursor: pointer" id="shopimg" height="30px"
 src="https://nooni-be87.kxcdn.com/nooni/wp-content/themes/nooni/images/logo.png"
 alt=""
 /></div>
@@ -77,26 +77,22 @@ alt=""
 <div class="user">
 
 
-<button style="padding:0px" class="btn btn-dark position-relative">
+<button style="padding:0px;background:none;" class="btn btn-dark position-relative">
 
-<a href="wishlist.html"><i style="color: #fff;" class="fa-solid fa-heart"></i></a>
+<a href="wishlist.html"><i style="color: red;" class="fa-solid fa-heart"></i></a>
 
-  <span  class="position-absolute  start-100 translate-middle badge rounded-pill bg-danger">
-    0
-    <span class="visually-hidden">unread messages</span>
+  
   </span>
 </button>
 
 
 
-<button style="padding:0px" class="btn btn-dark position-relative ms-3">
+<button style="padding:0px;background:none;" class="btn btn-dark position-relative ms-3">
 
-<a href="basket.html"><i style="color: #fff;" class="fa-solid fa-cart-arrow-down"></i>
+<a href="basket.html"><i style="color: red;" class="fa-solid fa-cart-arrow-down"></i>
 </a>
 
-  <span id="basket-counter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    0
-    <span class="visually-hidden">unread messages</span>
+  
   </span>
 </button>
 
@@ -113,7 +109,7 @@ footer.innerHTML = `
   <footer class="border-top pt-5">
     <div class="row">
       <div class="col-6 col-md-2 mb-3">
-        <img id="footer-loqo-dark" height="50px" width="60%" src="../img/logo.png" alt="" />
+        <img style="object-fit:contain" id="footer-loqo-dark" height="50px" width="60%" src="../img/logo.png" alt="" />
         <ul class="nav flex-column mt-4">
           <li class="nav-item mb-2">
             
@@ -225,7 +221,7 @@ footer.innerHTML = `
         </li>
       </ul>
       <p class="col-md-4 mb-0">
-      © 2024 <span style="color:orange;cursor:pointer" >Hüseyn Nəbizadə</span>  |  Bütün hüquqlar qorunur.
+      © 2024 <span style="color:orange;cursor:pointer" >Hüseyn Həsənov</span>  |  Bütün hüquqlar qorunur.
       </p>
       <img src="../img/footer.png" alt="" />
     </footer>
@@ -267,3 +263,7 @@ logoutt.onclick=()=> {
 // =====================================================================
 
 // =========================================================================================================================================
+document.querySelector("#shopimg").onclick=()=>{
+  window.location.assign("../pages/home.html")
+  // console.log("test");
+}

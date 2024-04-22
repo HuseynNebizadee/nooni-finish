@@ -6,7 +6,7 @@ const langItem = document.querySelectorAll('.lang');
 const oll =  document.querySelector("#ip")
 Acer = true
 const langData = {
-  en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','Login', 'Register','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 'Home / Blog', 'Blog Noon’i', 
+  en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 'Home / Blog', 'Blog Noon’i', 
    'ABOUT','Our Story' ,'Influencers','Join our team', 'Join our shop','CUSTOMER SERVICES' ,
       'Home', 'Features' , 'Pricing' ,'FAQs', 'SIGN UP FOR EMAILS', 'Enjoy 15% off* your first order when sign up to our newsletter',
       'Home',
@@ -17,7 +17,7 @@ const langData = {
     ],
     
 
-  az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Daxil ol", "Qeydiyyat","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə", "Ana Səhifə / Məqalə", "Məqalə Nooni"
+  az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə", "Ana Səhifə / Məqalə", "Məqalə Nooni"
   
         ,"Haqqimizda","Bizim hekaye","Bizə qoşul","Mağazaya qoşul","Təsirlər"
       ,"Müştəri servisi","Ana Səhifə","Xüsusiyyətləri","Qiymət","Suallar"
@@ -37,7 +37,7 @@ fetch("https://mocki.io/v1/3cd97bac-7f8e-4922-8bba-b000c27d4c99")
     data.map(item=>{
         oll+=`
         
-        <div id="box-parent" style="width:70%" class="col-12 col-sm-6 col-md-12">
+        <div data-aos="zoom-out-right" id="box-parent" class="col-12 col-sm-6 col-md-12">
             <div id="box"  class="d-flex card shadow">
                 <img id="blog-img" style="object-fit:cover; height: 400px; 
                 "  src="${item.image}" class="card-img-top" alt="...">
@@ -80,7 +80,7 @@ if (localStorage.getItem("lang") === null) {
               
               
               
-              <div id="box-parent" style="width:70%" class="col-12 col-sm-6 col-md-12">
+              <div data-aos="zoom-out-right" id="box-parent" class="col-12 col-sm-6 col-md-12">
                   <div id="box"  class="d-flex card shadow">
                       <img id="blog-img" style="object-fit:cover; height: 400px; 
                       "  src="${item.image}" class="card-img-top" alt="...">
@@ -126,7 +126,7 @@ if (localStorage.getItem("lang") === null) {
       
       
       
-      <div id="box-parent" style="width:70%" class="col-12 col-sm-6 col-md-12">
+      <div data-aos="zoom-out-right" id="box-parent" class="col-12 col-sm-6 col-md-12">
           <div id="box"  class="d-flex card shadow">
               <img id="blog-img" style="object-fit:cover; height: 400px; 
               "  src="${item.image}" class="card-img-top" alt="...">
@@ -176,7 +176,7 @@ if (localStorage.getItem("lang")=="aze") {
           
           
           
-          <div id="box-parent" style="width:70%" class="col-12 col-sm-6 col-md-12">
+          <div data-aos="zoom-out-right" id="box-parent" class="col-12 col-sm-6 col-md-12">
               <div id="box"  class="d-flex card shadow">
                   <img id="blog-img" style="object-fit:cover; height: 400px; 
                   "  src="${item.image}" class="card-img-top" alt="...">
@@ -224,7 +224,7 @@ if (localStorage.getItem("lang")=="aze") {
         
         
         
-        <div id="box-parent" style="width:70%" class="col-12 col-sm-6 col-md-12">
+        <div data-aos="zoom-out-right" id="box-parent" class="col-12 col-sm-6 col-md-12">
             <div id="box"  class="d-flex card shadow">
                 <img id="blog-img" style="object-fit:cover; height: 400px; 
                 "  src="${item.image}" class="card-img-top" alt="...">

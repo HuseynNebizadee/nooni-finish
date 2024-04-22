@@ -7,7 +7,7 @@
     height: 180px;
     background-image: radial-gradient(
       circle 897px at 9% 80.3%,
-      rgba(55, 60, 245, 1) 0%,
+      black 0%,
       rgba(234, 161, 15, 0.9) 100.2%
     );
     border-radius: 10px;
@@ -85,5 +85,11 @@
     letter-spacing: 1.5px;
     color: #e2e2e2;
     width: 100%;
+  }
+  body .dark #search-dark{
+    color: #fff;
+  }
+  body .light #search-dark{
+    color: black;
   }
   

@@ -9,7 +9,7 @@ const authLogin = (e) =>{
         myAlert.innerHTML = "Please, fill inputs"
     }else{
         if (loginInput[3].value !== loginInput[4].value) {
-            myAlert.className = "alert alert-warning"
+            myAlert.className = "alert alert-danger"
         myAlert.innerHTML = "Password is different"
         }else{
             myAlert.className = "alert alert-success"

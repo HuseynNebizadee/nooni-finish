@@ -1,8 +1,8 @@
 // fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
 const langData = {
-    en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','Login', 'Register','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 
-     'Sale off 25%','Chairs Settings You all love','Free Standart Shopping with 54$','Shop Now',
+    en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 
      'Sale off 20%','Lamps & Lights Great Low Prices','Free Standart Shopping with 40$','Shop Now',
+     'Sale off 25%','Chairs Settings You all love','Free Standart Shopping with 54$','Shop Now',
      'Sale off 30%',' Discovery Living Room Tables','Free Standart Shopping with 34$','Shop Now',
 
 
@@ -16,10 +16,10 @@ const langData = {
       ],
       
   
-    az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Daxil ol", "Qeydiyyat","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə"
+    az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə"
     ,
-    'Endirim 25%','Kreslolar Hamının Xoşuna gəlir','Pulsuz Standart Çatdırılma ilə 54$','İndi al',
-    'Endirim 20%','Lampalar və İşıqlar Əla Aşağı Qiymətlər','Pulsuz Standart Çatdırılma ilə 40$','İndi al',
+    'Endirim 20%','Lampalar və İşıqlar Aşağı Qiymətlərə','Pulsuz Standart Çatdırılma ilə 40$','İndi al',
+    'Endirim 25%','Kreslolarımız Hər Kəsin Zövqünə uyğundur','Pulsuz Standart Çatdırılma ilə 54$','İndi al',
     'Endirim 30%','Yeni Qonaq Otağı Masaları','Pulsuz Standart Çatdırılma ilə 34$','İndi al'
     
 
@@ -56,7 +56,7 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
 .then(res=>res.json())
 .then(data=>{
     let li = ""
-    data.slice(0,9).map(item=>{
+    data.slice(1,11).map(item=>{
         li+=`
         
         
@@ -75,8 +75,8 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
         </label>
     
         <div class="content">
-        <div style="font-size:1.2rem" class="product-name">${item.title.en.slice(0,25)}...</div>
-        <div style="font-size:1rem" class="product-name">${item.description.en.slice(0,30)}</div>
+        <div style="font-size:1.2rem" class="product-name">${item.title.en.slice(0,30)}...</div>
+        <div style="font-size:1rem" class="product-name">${item.description.en.slice(0,40)}</div>
             <div class="color-size-container">
                 
             </div>
@@ -93,7 +93,7 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
         </div>
     
         <div class="button-container">
-            <a style="text-align: center; text-decoration: none;" href="details.html?id=${item.id}" id="heart" class="buy-button button">View Details</a>
+            <a style="text-align: center; text-decoration: none;" href="detailshome.html?id=${item.id}" id="heart" class="buy-button button">Buy Now</a>
             <button id="btn-p" class="cart-button button">
             <i style="color: #fff;" class="fa-solid fa-cart-arrow-down"></i>
     
@@ -135,7 +135,7 @@ if (localStorage.getItem("lang") === null) {
     .then(res=>res.json())
     .then(data=>{
         let li = ""
-        data.slice(0,9).map(item=>{
+        data.slice(1,11).map(item=>{
             li+=`
             
             
@@ -154,8 +154,8 @@ if (localStorage.getItem("lang") === null) {
             </label>
         
             <div class="content">
-            <div style="font-size:1.2rem" class="product-name">${item.title.az.slice(0,25)}...</div>
-            <div style="font-size:1rem" class="product-name">${item.description.az.slice(0,30)}</div>
+            <div style="font-size:1.2rem" class="product-name">${item.title.az.slice(0,30)}...</div>
+            <div style="font-size:1rem" class="product-name">${item.description.az.slice(0,40)}</div>
                 <div class="color-size-container">
                     
                 </div>
@@ -172,7 +172,7 @@ if (localStorage.getItem("lang") === null) {
             </div>
         
             <div class="button-container">
-                <a style="text-align: center; text-decoration: none;" href="details.html?id=${item.id}" id="heart" class="buy-button button">View Details</a>
+                <a style="text-align: center; text-decoration: none;" href="detailshome.html?id=${item.id}" id="heart" class="buy-button button">Buy Now</a>
                 <button id="btn-p" class="cart-button button">
                 <i style="color: #fff;" class="fa-solid fa-cart-arrow-down"></i>
         
@@ -213,7 +213,7 @@ if (localStorage.getItem("lang") === null) {
   .then(res=>res.json())
   .then(data=>{
       let li = ""
-      data.slice(0,9).map(item=>{
+      data.slice(1,11).map(item=>{
           li+=`
           
           
@@ -232,8 +232,8 @@ if (localStorage.getItem("lang") === null) {
           </label>
       
           <div class="content">
-          <div style="font-size:1.2rem" class="product-name">${item.title.en.slice(0,25)}...</div>
-          <div style="font-size:1rem" class="product-name">${item.description.en.slice(0,30)}</div>
+          <div style="font-size:1.2rem" class="product-name">${item.title.en.slice(0,30)}...</div>
+          <div style="font-size:1rem" class="product-name">${item.description.en.slice(0,40)}</div>
               <div class="color-size-container">
                   
               </div>
@@ -250,7 +250,7 @@ if (localStorage.getItem("lang") === null) {
           </div>
       
           <div class="button-container">
-              <a style="text-align: center; text-decoration: none;" href="details.html?id=${item.id}" id="heart" class="buy-button button">View Details</a>
+              <a style="text-align: center; text-decoration: none;" href="details.html?id=${item.id}" id="heart" class="buy-button button">Buy Now</a>
               <button id="btn-p" class="cart-button button">
               <i style="color: #fff;" class="fa-solid fa-cart-arrow-down"></i>
       
@@ -303,7 +303,7 @@ if (localStorage.getItem("lang") === null) {
   .then(res=>res.json())
   .then(data=>{
       let li = ""
-      data.slice(0,9).map(item=>{
+      data.slice(1,11).map(item=>{
           li+=`
           
           
@@ -322,8 +322,8 @@ if (localStorage.getItem("lang") === null) {
           </label>
       
           <div class="content">
-          <div style="font-size:1.2rem" class="product-name">${item.title.az.slice(0,25)}...</div>
-          <div style="font-size:1rem" class="product-name">${item.description.az.slice(0,30)}</div>
+          <div style="font-size:1.2rem" class="product-name">${item.title.az.slice(0,30)}...</div>
+          <div style="font-size:1rem" class="product-name">${item.description.az.slice(0,40)}</div>
               <div class="color-size-container">
                   
               </div>
@@ -340,7 +340,7 @@ if (localStorage.getItem("lang") === null) {
           </div>
       
           <div class="button-container">
-              <a style="text-align: center; text-decoration: none;" href="details.html?id=${item.id}" id="heart" class="buy-button button">View Details</a>
+              <a style="text-align: center; text-decoration: none;" href="detailshome.html?id=${item.id}" id="heart" class="buy-button button">Buy Now</a>
               <button id="btn-p" class="cart-button button">
               <i style="color: #fff;" class="fa-solid fa-cart-arrow-down"></i>
       
@@ -381,7 +381,7 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
   .then(res=>res.json())
   .then(data=>{
       let li = ""
-      data.slice(0,9).map(item=>{
+      data.slice(1,11).map(item=>{
           li+=`
           
           
@@ -400,8 +400,8 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
           </label>
       
           <div class="content">
-          <div style="font-size:1.2rem" class="product-name">${item.title.en.slice(0,25)}...</div>
-          <div style="font-size:1rem" class="product-name">${item.description.en.slice(0,30)}</div>
+          <div style="font-size:1.2rem" class="product-name">${item.title.en.slice(0,30)}...</div>
+          <div style="font-size:1rem" class="product-name">${item.description.en.slice(0,40)}...</div>
               <div class="color-size-container">
                   
               </div>
@@ -418,7 +418,7 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
           </div>
       
           <div class="button-container">
-              <a style="text-align: center; text-decoration: none;" href="details.html?id=${item.id}" id="heart" class="buy-button button">View Details</a>
+              <a style="text-align: center; text-decoration: none;" href="detailshome.html?id=${item.id}" id="heart" class="buy-button button">Buy Now</a>
               <button id="btn-p" class="cart-button button">
               <i style="color: #fff;" class="fa-solid fa-cart-arrow-down"></i>
       

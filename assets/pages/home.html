@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -99,9 +99,9 @@
         </swiper-container>
       </main>
       <section class="container my-5">
-        <div class="third">
-          <div class="third-left">
-            <div
+        <div  class="third">
+          <div  class="third-left">
+            <div data-aos="zoom-in-up"
               style="
                 background-image: url(../img/banner-0.jpg);
                 background-repeat: no-repeat;
@@ -116,7 +116,7 @@
               </h1>
               <h6>Shop Now</h6>
             </div>
-            <div
+            <div data-aos="zoom-in-up"
               style="background-image: url(../img/banner-1.jpg); height: 340px"
               class="third-left-down"
             >
@@ -125,7 +125,7 @@
               <h6>Shop Now</h6>
             </div>
           </div>
-          <div
+          <div data-aos="zoom-in-up"
             style="background-image: url(../img/banner-2.jpg); height: 750px"
             class="third-right"
           >
@@ -143,7 +143,7 @@
       
       <div class="text my-5">
         <div class="container">
-          <div class="right"><h1>Best Modern Furniture</h1></div>
+          <div data-aos="zoom-in-up" class="right"><h1>Best Modern Furniture</h1></div>
           <a style="right: 0px; text-align: center;padding: 5px;display: flex;align-items: center;" class="btn btn-warning" href="../pages/shop.html">See All</a>
           
         </div>
@@ -153,16 +153,20 @@
         <ol class="row"></ol>
       </div>
 
-      <div class="video mt-5">
-        <video autoplay muted loop id="myVideo">
+      <div data-aos="zoom-in" class="video mt-5">
+        <video style="display: flex;align-items: center;justify-content: center;" autoplay muted loop id="myVideo">
           <source src="../video/video for pritect.mp4" type="video/mp4" />
         </video>
       </div>
 
-      <div class="nooni-footer"></div>
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" class="nooni-footer"></div>
     
     </div></div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="../bootstrap5/js/bootstrap.bundle.js"></script>
     <script

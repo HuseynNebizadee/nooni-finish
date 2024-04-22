@@ -159,7 +159,7 @@ header .container{
 
 }
 .img{
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,10 +239,21 @@ swiper-container {
   swiper-slide .box .text{
     width: 30%;
   }
+  @media screen and (max-width:650px) {
+    header .container .img{
+        width: 60%;
+    }
+  }
   @media screen and (max-width:900px) {
     #img-swiper{
         display: none;
         
+    }
+    .text .lang{
+        text-align: center;
+    }
+    .text h1{
+        text-align: center;
     }
     swiper-slide .box .text{
             width: 100%;
@@ -345,13 +356,13 @@ swiper-container {
 #myVideo {
     right: 0;
     bottom: 0;
-    min-width: 80%;
-    min-height: 80%;
+    min-width: 100%;
+    min-height: 100%;
   }
   .content {
     bottom: 0;
     color: #f1f1f1;
-    width: 80%;
+    width: 100%;
     padding: 20px;
   }
   .video{
@@ -362,7 +373,7 @@ swiper-container {
     justify-content: center;
 }
 .video video{
-    filter: brightness(40%);
+    filter: brightness(70%);
     transform:  translateY(-50%);
 }
 .icon{

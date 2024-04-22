@@ -360,3 +360,9 @@ body .dark #lang-btn{
     background-color: #fff;
     color: black;
   }
+  body .dark #search-dark{
+    color: #fff;
+  }
+  body .light #search-dark{
+    color: black;
+  }

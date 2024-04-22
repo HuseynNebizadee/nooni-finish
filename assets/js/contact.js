@@ -123,7 +123,7 @@ if (localStorage.getItem("mode")=="light") {
 
 
 const langData = {
-  en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','Login', 'Register','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 'Get in touch with us. Send us a message', 'Contact Us', 
+  en: ['UP TO 40% OFF BEST-SELLING . SHOP NOW','HOME', 'SHOP', 'BLOG', 'ABOUT US', 'CONTACT US', 'Get in touch with us. Send us a message', 'Contact Us', 
   'Call to Us:' ,
   'We’re available 24/7, 7 days a week.+08 9229 8228 ', 'Write to Us:',
     'Fill out our form and we will contact you within 24 hours.Email: Support1234@Jaroti',
@@ -141,7 +141,7 @@ const langData = {
     ],
     
 
-  az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Daxil ol", "Qeydiyyat","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə", "Bizimlə əlaqə saxlayın. Bizə mesaj göndərin", "Bizimlə əlaqə",
+  az: ["ƏN ÇOX SATILANLARA 40%-Ə QƏDƏR ENDİRİM. İNDİ ALIN","Ana Səhifə", "Məhsullar", "Məqalə", "Haqqımızda", "Əlaqə", "Bizimlə əlaqə saxlayın. Bizə mesaj göndərin", "Bizimlə əlaqə",
   "Bizimlə əlaqə saxlayın", 
   "Həftənin 7 günü, 24/7 xidmətinizdəyik.+08 9229 8228", "Bizə yazın:", "Formumuzu doldurun və biz 24 saat ərzində sizinlə əlaqə saxlayacağıq.E-poçt: Support1234@Jaroti",
       "Baş ofis", "Bazar ertəsi – Cümə: 9:00-20:00 Şənlik: 11:00 – 15:00 123 Atlantic, Brooklyn, New York, USA",

@@ -1,4 +1,4 @@
-fetch("https://mocki.io/v1/30357161-fd74-4e2f-a048-2337046b1173")
+fetch("https://mocki.io/v1/9ab0a188-059b-4013-9be4-b121b55c1a2d")
 .then(res=>res.json())
 .then(data=>{
     const urlid = location.href.slice(51, 99);
@@ -13,13 +13,16 @@ fetch("https://mocki.io/v1/30357161-fd74-4e2f-a048-2337046b1173")
       <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">${filterData[0].title.en}</h1>
       <p class="lead">Stock: ${filterData[0].stock}</p>
       <p class="lead">Color: ${filterData[0].color.en}</p>
-        <a href="shop.html"  class="btn btn-secondary btn-lg px-4 me-md-2">Back</a>
-        <button type="button" class="btn btn-warning btn-lg px-4">${filterData[0].price}$</button>
+        <a href="shop.html"  class="btn btn-dark btn-lg px-4 me-md-2">Back</a>
+        <button type="button" class="btn btn-outline-dark btn-lg px-4">${filterData[0].price}$</button>
         <button onclick="sharePage()" class="btn btn-warning btn-lg px-4">Share</button>
+        
+
         </div>
         </div>
   </div>`
 });
+
 
 async function sharePage() {
   try {

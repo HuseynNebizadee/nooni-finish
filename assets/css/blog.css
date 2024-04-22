@@ -355,6 +355,7 @@ body .dark #lang-btn{
 #searchInput:focus{
     box-shadow: none;
     border-color: none;
+    outline: none;
 }
 #searchInput{
     height: 35px;
@@ -370,3 +371,33 @@ body .light .search-item{
     color: black;
     border: 1px solid black;
 }
+body .dark #search-dark{
+    color: #fff;
+  }
+  body .light #search-dark{
+    color: black;
+  }
+  #box-parent{
+    width: 80%;
+  }
+  @media screen and (max-width:1000px) {
+    #box-parent{
+        width: 90%;
+      }
+  }
+  @keyframes shadow {
+    0% {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); 
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); 
+    }
+  }
+  
+
+  #searchInput {
+    animation: shadow 2s infinite; 
+  }
