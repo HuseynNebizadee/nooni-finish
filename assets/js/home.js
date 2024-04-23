@@ -69,7 +69,7 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
             <div class="price">$${item.price}</div>
         </div>
         <label class="favorite">
-     <i  style="color: red;" class="fa-regular fa-heart"></i>
+     <i  style="color: red;" class="fa-solid fa-heart"></i>
         
            
         </label>
@@ -148,7 +148,7 @@ if (localStorage.getItem("lang") === null) {
                 <div class="price">$${item.price}</div>
             </div>
             <label class="favorite">
-         <i  style="color: red;" class="fa-regular fa-heart"></i>
+         <i  style="color: red;" class="fa-solid fa-heart"></i>
             
                
             </label>
@@ -226,7 +226,7 @@ if (localStorage.getItem("lang") === null) {
               <div class="price">$${item.price}</div>
           </div>
           <label class="favorite">
-       <i  style="color: red;" class="fa-regular fa-heart"></i>
+       <i  style="color: red;" class="fa-solid fa-heart"></i>
           
              
           </label>
@@ -316,7 +316,7 @@ if (localStorage.getItem("lang") === null) {
               <div class="price">$${item.price}</div>
           </div>
           <label class="favorite">
-       <i  style="color: red;" class="fa-regular fa-heart"></i>
+       <i  style="color: red;" class="fa-solid fa-heart"></i>
           
              
           </label>
@@ -394,7 +394,7 @@ fetch("https://mocki.io/v1/673da01d-bebb-41d5-99e9-cce9e39751e1")
               <div class="price">$${item.price}</div>
           </div>
           <label class="favorite">
-       <i  style="color: red;" class="fa-regular fa-heart"></i>
+       <i  style="color: red;" class="fa-solid fa-heart"></i>
           
              
           </label>
